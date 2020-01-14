@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "telegram-b",
+    "staging": "telegram-b"
+  }
+}
