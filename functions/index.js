@@ -21,7 +21,7 @@ bot.on('text', (ctx) => {
     axios.get('http://api.weatherstack.com/current', { params })
         .then(response => {
             const apiResponse = response.data;
-            return ctx.reply('temperature ' + apiResponse.current.temperature)
+            return ctx.reply('temperature ' + apiResponse.current.temperature + ' °C')
                 // res.send(apiResponse)
                 // console.log(`Current temperature in ${apiResponse.location.name} is ${apiResponse.current.temperature}℃`);
         }).catch(error => {
